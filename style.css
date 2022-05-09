@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #b79dbe;
+    font-family:'Radio Canada', sans-serif;;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+text-decoration: none;
+}
+
+body{
+    background-image: url(./pexels-kévin-dorg-2881262.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+    background: linear-gradient(to right)
+}
+
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #D2F0F3 ;
+    margin-bottom: 45px;
+}
+
+header ul{
+    display: flex ;
+}
+
+header ul li{
+    padding: 5px;
+}
+
+header ul li a {
+    transition: 400ms;
+}
+
+header ul li a:hover{
+    color: darkcyan;
+    text-decoration: underline;
+
+}
+main{
+    padding: 10px;
+}
+
+img{
+    border-radius: 25%;
+}
+ 
+.container{
+    text-align: center;
+}
+.container .name h1{
+    font-size: 40px;
+}
+
+.container .name h5{
+    font-size: 25px;
+}
+
+#arrow {
+    padding: 10px ;
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 30px;
+    
+}
+/* .form p{ */
+    /* color:#ffffff; */
+/* } */
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 5px 0px 0px 5px;
+    margin-top: 20px;
+}
+
+.form button {
+    width: 15%;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(to right,#621e75 50%, #a167b1 50% ) ;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: cornsilk;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+@media only screen and (max-width:480px) {
+   
+    .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .container name h1{
+        font-size: 30px;
+    }
+    .container name h5{
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+    .form {
+        width: 100%;
+    }
+    
+}

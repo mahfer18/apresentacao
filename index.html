@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f59a541e48.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Maria Fernanda</title>
+</head>
+<body>
+    <header>
+        <div>
+           <img src="./Logotipopurple.png" alt="foto marifer" width="100px">
+        </div>
+        <ul>
+            <li>
+               <a href="https://github.com/mahfer18" target="_blank">GitHub</a> 
+               
+            </li>
+            <li>
+                <a target="_blank" href="mailto:fernandamarques1890@gmail.com">E-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/43996186252">Whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Maria Fernanda Marques</h1>
+                <h5>Estudante de Engenharia de Software</h5>
+            </div>
+
+            <div onclick= "displayAbout()" id="arrow">
+                <i id= "animation" class="fa-solid fa-circle-chevron-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Olá, sou estudante do 4° período de Engenharia de software, sou curiosa, sempre aprendendo algo novo e estou me aventurando no front-end, me empenhando para avançar cada vez mais no Hiring Coders #3!
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+
+        }
+    </script>
+</body>
+</html>
